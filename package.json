@@ -1,5 +1,6 @@
 {
-  "name": "minimal_portfolio",
+  "name": "interactive_resume",
+  "author": "42zeroo",
   "version": "0.1.0",
   "private": true,
   "scripts": {
