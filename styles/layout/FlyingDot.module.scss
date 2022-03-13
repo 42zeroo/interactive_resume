@@ -1,0 +1,25 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dot {
+    transition: 1s margin-top ease-in-out;
+    width: 816.74px;
+    height: 269.04px;
+    background: linear-gradient(270deg, #000000 2.59%, rgba(0, 0, 0, 0.0132282) 76.56%, rgba(255, 65, 19, 0) 76.57%);
+    border-radius: 2000px;
+    transform: rotate(-45deg);
+    margin-left: 170px;
+    margin-bottom: -500px;
+}
+
+.isBackgroundVertical {
+    margin-top: -100px;
+}

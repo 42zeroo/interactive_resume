@@ -1,0 +1,62 @@
+@import "mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+/// DESKTOP FIRST
+* {
+    font-size: 15px;
+}
+
+h1 {
+    font-size: 38px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 20px;
+}
+
+@include mobile() {
+    * {
+        font-size: 14px;
+    }
+}
+
+
+.desktop-side-content {
+    width: 300px;
+    height: 500px;
+    background: red;
+}
+
+.desktop-side-content-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.desktop-side-content-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.desktop-side-content-exit {
+    opacity: 1;
+}
+
+.desktop-side-content-exit-active {
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 300ms, transform 300ms;
+}

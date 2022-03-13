@@ -1,0 +1,14 @@
+@import '../variables';
+
+.appContainer {
+    transition: 0.5s background-color ease-in-out;
+    width: 100%;
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: $grey1;
+}
+
+.isFrontPage {
+    background-color: $grey2;
+}

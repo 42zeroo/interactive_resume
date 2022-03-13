@@ -1,0 +1,23 @@
+.tag {
+    padding: 8px 16px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    border-radius: 1000px;
+    letter-spacing: 0.006em;
+    max-width: max-content;
+    color: #000000;
+
+    .color-white {
+
+        background: #fff;
+    }
+}
+
+.tagColorWhite {
+    background: #fff;
+}
+
+.tagColorGrey {
+    background: #f2f2f2;
+}

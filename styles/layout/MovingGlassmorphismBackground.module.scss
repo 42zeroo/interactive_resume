@@ -1,0 +1,42 @@
+.verticaly {
+    height: 100vh;
+    width: 66.66vw;
+    position: relative;
+    margin-top: 0;
+    transition: 0.3s all ease-in-out;
+
+    &:before {
+        transition: 0.3s all ease-in-out;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 66.66vw;
+        background: rgba(255, 255, 255, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(30px);
+    }
+}
+
+.horizontaly {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    transition: 0.3s all ease-in-out;
+
+    &:before {
+        margin-top: 43.65vh;
+
+        transition: 0.3s all ease-in-out;
+        content: "";
+        top: 0;
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100vw;
+        background: rgba(255, 255, 255, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        backdrop-filter: blur(30px);
+    }
+}
