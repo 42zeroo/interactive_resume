@@ -5,9 +5,10 @@ export default function Document() {
     <Html>
       <Head>
         <script
+          async
           src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"
-          crossorigin="anonymous"
-          referrerpolicy="no-referrer"
+          crossOrigin="anonymous"
+          referrerPolicy="no-referrer"
         />
       </Head>
       <body>

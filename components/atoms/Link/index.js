@@ -6,7 +6,12 @@ const Link = ({ url, title, underscore, className }, props) => {
     <a
       href={url}
       target="_blank"
-      className={classNames(styles.link, underscore && "underscore", className)}
+      rel="noreferrer"
+      className={classNames(
+        styles.link,
+        underscore && styles.underscore,
+        className
+      )}
       {...props}
     >
       {title}
