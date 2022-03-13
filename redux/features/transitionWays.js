@@ -1,3 +1,24 @@
+export const scale_up = (timeout) => {
+  return {
+    direction: "slide_up",
+    entering: {
+      position: `absolute`,
+      opacity: 0,
+      transform: `scale(0.4)`
+    },
+    entered: {
+      transition: `opacity ${timeout}ms ease-in-out, transform ${timeout}ms ease-in-out`,
+      opacity: 1,
+      transform: `scale(1)`,
+      animation: "blink 2s linear 2"
+    },
+    exiting: {
+      transition: `opacity ${timeout}ms ease-in-out, transform ${timeout}ms ease-in-out`,
+      opacity: 0,
+      transform: `scale(0.3)`
+    }
+  };
+};
 export const slide_up = (timeout) => {
   return {
     direction: "slide_up",

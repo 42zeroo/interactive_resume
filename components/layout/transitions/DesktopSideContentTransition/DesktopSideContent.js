@@ -27,7 +27,6 @@ const DesktopSideContent = ({ pageIndex }) => {
       )}
       {typeof data?.content !== "undefined" && (
         <div className={styles.content}>
-          {console.log(styles)}
           {typeof data?.content?.tags !== "undefined" && (
             <div className="tags">
               {data?.content?.tags?.map((tag) => (

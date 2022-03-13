@@ -4,11 +4,14 @@ import {
   Transition as ReactTransition
 } from "react-transition-group";
 import { useSelector } from "react-redux";
+import { useRouter } from "next/router";
 
-const Transition = ({ children, location }) => {
+const Transition = ({ children }) => {
   const transitionWay = useSelector((state) => state.transition.way);
   const timeout = useSelector((state) => state.transition.timeout);
+  const router = useRouter();
 
+  const location = router.pathname;
   return (
     <TransitionGroup className={styles.container}>
       <ReactTransition
