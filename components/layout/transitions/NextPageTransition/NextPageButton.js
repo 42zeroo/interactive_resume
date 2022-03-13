@@ -4,11 +4,16 @@ import { useRouter } from "next/router";
 import next_page_data from "@data/NextPageButtons";
 
 const NextPageButton = ({ pageIndex }) => {
-  const { title, href } = next_page_data.find((e) => e.pageIndex === pageIndex);
+  const { title, nextHref } = next_page_data.find(
+    (e) => e.pageIndex === pageIndex
+  );
 
   const router = useRouter();
   return (
-    <button className={styles.nextPageButton} onClick={() => router.push(href)}>
+    <button
+      className={styles.nextPageButton}
+      onClick={() => router.push(nextHref)}
+    >
       {title}
     </button>
   );

@@ -42,7 +42,7 @@ const data = [
   },
   {
     uuid: uuid(),
-    pageIndex: 2,
+    pageIndex: 3,
     page: "overview",
     header: {
       title: "My spaces",

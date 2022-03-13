@@ -7,7 +7,7 @@ const MovingGlassmorphismBackground = () => {
     (state) => state.layout.isGlassmorphismBackgroundIsCroppedVerticaly
   );
 
-  return <div className={igbich ? styles.horizontaly : styles.verticaly}></div>;
+  return <div className={igbich ? styles.horizontaly : styles.verticaly} />;
 };
 
 export default MovingGlassmorphismBackground;

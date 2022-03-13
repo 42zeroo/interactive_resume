@@ -4,8 +4,13 @@ const initialState = {
   pageIndex: 0,
   isFront: true,
   headerData: {
-    icon_path: "icon_path",
-    text: `Feel free to inject any fun copies here.`
+    title: `Feel free to inject any fun copies here.`,
+    image: {
+      url: "/custom/blank.png",
+      alt: "card_image_alt",
+      width: 250,
+      height: 250
+    }
   },
   isGlassmorphismBackgroundIsCroppedVerticaly: false,
   isSideContentShowed: false

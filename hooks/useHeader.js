@@ -1,9 +1,9 @@
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { setHeaderData } from "@redux/features/layoutSlice";
-const useHeader = (icon_path, text) => {
+const useHeader = (headerData) => {
   const dispatch = useDispatch();
-  useEffect(() => dispatch(setHeaderData(icon_path, text)), []);
+  useEffect(() => dispatch(setHeaderData(headerData)), []);
 };
 
 export default useHeader;

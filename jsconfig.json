@@ -12,6 +12,7 @@
         "@hooks/*": ["hooks/*"],
         "@redux/*": ["redux/*"],
         "@styles/*": ["styles/*"],
+        "@helpers/*": ["helpers/*"],
       }
     }
   }

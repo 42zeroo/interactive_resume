@@ -1,5 +1,6 @@
 import "@styles/index.scss";
 
+import PageHeaderTransition from "@components/layout/transitions/PageHeaderTransition";
 import PageChangeTransition from "@components/layout/transitions/PageChangeTransition";
 import DesktopSideContentTransition from "@components/layout/transitions/DesktopSideContentTransition";
 import NextPageTransition from "@components/layout/transitions/NextPageTransition";
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }) {
     <Provider store={store}>
       <CircleLinesMouseMoveBackgroundAnimation />
       <Layout>
+        <PageHeaderTransition />
         <DesktopSideContentTransition />
         <PageChangeTransition>
           <Component {...pageProps} />

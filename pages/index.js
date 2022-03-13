@@ -1,18 +1,19 @@
-import HomePageContent from "@components/molecules/HomePageContent";
-import Cropped from "@components/atoms/Cropped";
 import usePageData from "@hooks/usePageData";
 
-export default function Home() {
-  const headerText = "Feel free to inject any fun copies here.";
-  usePageData(
-    0,
-    { icon_path: "icon_path", text: headerText },
-    true,
-    "horizontal"
-  );
+import HomePageContent from "@components/molecules/HomePageContent";
+import Cropped from "@components/atoms/Cropped";
+
+const PAGE_INDEX = 0;
+const IS_SIDE_CONTENT_SHOWED = true;
+const GLASSMORPHISM_SIDE = "horizontal";
+
+const Home = () => {
+  usePageData(PAGE_INDEX, IS_SIDE_CONTENT_SHOWED, GLASSMORPHISM_SIDE);
   return (
-    <Cropped isCroppedVerticaly={false}>
+    <Cropped isCroppedVerticaly={GLASSMORPHISM_SIDE === "horizontal"}>
       <HomePageContent />
     </Cropped>
   );
-}
+};
+
+export default Home;

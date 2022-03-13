@@ -2,9 +2,13 @@ import React from "react";
 import styles from "@styles/atoms/Cropped.module.scss";
 import { useSelector } from "react-redux";
 
-const Cropped = ({ isCroppedVerticaly, children }) => {
+const Cropped = ({ children }) => {
+  const igbich = useSelector(
+    (state) => state.layout.isGlassmorphismBackgroundIsCroppedVerticaly
+  );
+
   return (
-    <div className={isCroppedVerticaly ? styles.horizontaly : styles.verticaly}>
+    <div className={igbich ? styles.horizontaly : styles.verticaly}>
       {children}
     </div>
   );

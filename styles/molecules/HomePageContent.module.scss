@@ -1,5 +1,12 @@
 .container {
+    position: relative;
     width: 100%;
+}
+
+.wrapper {
+    position: relative;
     display: flex;
     justify-content: space-between;
+
+
 }

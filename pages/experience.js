@@ -1,15 +1,27 @@
 import usePageData from "@hooks/usePageData";
 import Cropped from "@components/atoms/Cropped";
+import ScrollableContainer from "@components/atoms/ScrollableContainer";
+import ExperienceCard from "@components/atoms/ExperienceCard";
+import experience_cards_data from "@data/ExperienceCards";
 
 const Experience = () => {
-  const headerText = "Places that I worked at.";
-  usePageData(
-    1,
-    { icon_path: "icon_path", text: headerText },
-    false,
-    "vertical"
+  usePageData(1, false, "vertical");
+  return (
+    <Cropped isCroppedVerticaly={true}>
+      <ScrollableContainer>
+        {experience_cards_data.map((card) => (
+          <ExperienceCard
+            key={card.uuid}
+            jobTitle={card.jobTitle}
+            company={card.company}
+            from={card.from}
+            to={card.to}
+            responsibilities={card.responsibilities}
+          />
+        ))}
+      </ScrollableContainer>
+    </Cropped>
   );
-  return <Cropped isCroppedVerticaly={true}>EXPERIENCE</Cropped>;
 };
 
 export default Experience;

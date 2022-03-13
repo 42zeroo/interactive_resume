@@ -1,10 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { slide_up, slide_right, scale_up } from "./transitionWays";
+import { slide_up, slide_right, scale_up, slide_down } from "./transitionWays";
 
 const initialState = {
   way: slide_up(200),
   timeout: 500,
   sideContentWay: slide_right(500),
+  pageHeaderTransitionWay: slide_down(500),
   nextButtonTransitionWay: scale_up(500),
   sideContentTimeout: 500
 };
