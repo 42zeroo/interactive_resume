@@ -90,10 +90,10 @@ const data = [
     frameworks: [
       {
         uuid: uuid(),
-        url: "/portfolio/frameworks/next.png",
+        url: "/portfolio/frameworks/gatsby.png",
         alt: "nextjs",
-        width: 85,
-        height: 51
+        width: 53,
+        height: 53
       },
       {
         uuid: uuid(),
@@ -159,7 +159,8 @@ const data = [
   {
     uuid: uuid(),
     siteTitle: `shareyourfire.ch`,
-    siteUrl: "https://shareyourfire.ch",
+    siteUrl:
+      "https://web.archive.org/web/20210720105928/https://digitallab.allianz.ch/de",
     company: `sugo`,
     frameworks: [
       {
@@ -188,9 +189,9 @@ const data = [
   },
   {
     uuid: uuid(),
-    siteTitle: `tipply.pl - kreator nowego konta`,
-    siteUrl: "https://tipply.pl",
-    company: `sugo`,
+    siteTitle: `tipply.pl - after account creation`,
+    siteUrl: "https://tipply-pl-user-creator.vercel.app/",
+    company: `reccly`,
     frameworks: [
       {
         uuid: uuid(),
