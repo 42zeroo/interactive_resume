@@ -7,10 +7,14 @@ const PortfolioCard = ({
   company,
   frameworks,
   preview,
-  technologies
+  technologies,
+  siteUrl
 }) => {
   return (
-    <div className={styles.container}>
+    <div
+      className={styles.container}
+      onClick={() => window.open(siteUrl, "_blank").focus()}
+    >
       <div className={styles.header}>
         <div className={styles.headerTitle}>
           <h1>{siteTitle}</h1>

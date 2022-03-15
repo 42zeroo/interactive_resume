@@ -17,6 +17,7 @@ const Portfolio = () => {
             frameworks={card.frameworks}
             preview={card.preview}
             technologies={card.technologies}
+            siteUrl={card.siteUrl}
           />
         ))}
       </ScrollableContainer>
