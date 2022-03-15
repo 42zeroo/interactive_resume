@@ -3,7 +3,7 @@ import { v4 as uuid } from "uuid";
 const data = [
   {
     title: "About me",
-    description: `<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Malesuada dignissim condimentum feugiat nisl. Ultrices libero massa enim, tristique turpis egestas cras. Ut quis duis consequat augue commodo. Eget arcu, condimentum aliquet fusce mauris aliquet massa. Purus dolor euismod porta eget eu. Sodales tellus sit quisque nullam nisi sed massa. Turpis ege.</br></br>Lacus, bibendum arcu ornare fames interdum risus. Non bibendum cursus enim, venenatis. Nunc egestas in ut massa praesent enim, egestas. Platea pellentesque nam odio.</p>`,
+    description: `<p>From childhood was interested in "computers". From always wanted to work as developer. As now I'm finishing IT studies on "Web Development" profile. Everyday I'm improving my skills in app/web developing mostly in React and Drupal. As person I'm communicative guy who's like traveling.</p>`,
     uuid: uuid()
   },
   {

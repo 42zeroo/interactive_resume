@@ -5,6 +5,7 @@ import CornerPageSwitcher from "./CornerPageSwitcher";
 import classNames from "classnames";
 import { useSelector } from "react-redux";
 import styles from "@styles/layout/Main.module.scss";
+import useLoader from "@hooks/useLoader";
 // import DesktopSideContent from "./DesktopSideContentTransition";
 
 const Layout = ({ children }) => {
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
   );
 
   const isFront = useSelector((state) => state.layout.isFront);
+  useLoader();
   React.useEffect(() => {
     console.log({ igbich });
   }, [igbich]);

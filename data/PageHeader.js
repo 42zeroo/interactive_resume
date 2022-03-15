@@ -3,10 +3,10 @@ const data = [
   {
     uuid: uuid(),
     pageIndex: 0,
-    title: "Feel free to inject any fun copies here.",
+    title: "Here should be super slogan for this site.",
     image: {
-      url: "/custom/blank.png",
-      alt: "card_image_alt",
+      url: "/icons/person.svg",
+      alt: "person",
       width: 56,
       height: 56
     }
@@ -14,10 +14,10 @@ const data = [
   {
     uuid: uuid(),
     pageIndex: 1,
-    title: "Places that I worked at",
+    title: "Revelant places that I worked at",
     image: {
-      url: "/custom/blank.png",
-      alt: "card_image_alt",
+      url: "/icons/work.svg",
+      alt: "work",
       width: 56,
       height: 56
     }
@@ -27,8 +27,8 @@ const data = [
     pageIndex: 2,
     title: "Sites that I have made",
     image: {
-      url: "/custom/blank.png",
-      alt: "card_image_alt",
+      url: "/icons/portfolio.svg",
+      alt: "portfolio",
       width: 56,
       height: 56
     }
@@ -36,10 +36,10 @@ const data = [
   {
     uuid: uuid(),
     pageIndex: 3,
-    title: "Can be Miscellaneous",
+    title: "Other relevant facts you may like to know",
     image: {
-      url: "/custom/blank.png",
-      alt: "card_image_alt",
+      url: "/icons/misc.svg",
+      alt: "misc",
       width: 56,
       height: 56
     }

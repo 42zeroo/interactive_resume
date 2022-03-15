@@ -1,6 +1,7 @@
 @import "mixins";
 
 * {
+    font-family: Helvetica;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,7 +17,10 @@ body {
 }
 
 h1 {
+    font-family: HelveticaBold;
     font-size: 38px;
+    line-height: 45px;
+    letter-spacing: 0.006em;
 }
 
 h2,
@@ -24,6 +28,7 @@ h3,
 h4,
 h5,
 h6 {
+    font-family: HelveticaBold;
     font-size: 20px;
 }
 
@@ -64,4 +69,63 @@ h6 {
 
 .portfolio-cards-container {
     // margin-top: -30px;
+}
+
+
+#loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: fixed;
+    overflow: hidden;
+    left: 50%;
+    font-family: Arial;
+    z-index: 22;
+    transform: translateX(-50%);
+    font-family: "readex pro";
+    background: skyblue;
+}
+
+#loader:after {
+    font-family: Helvetica;
+    content: "";
+    position: relative;
+    animation: load 3s infinite;
+}
+
+@keyframes load {
+    0% {
+        content: "";
+    }
+
+    33% {
+        content: ".";
+    }
+
+    66% {
+        content: "..";
+    }
+
+    99% {
+        content: "...";
+    }
+}
+
+@keyframes loader-dissapear {
+    0% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+
+        display: none;
+    }
+
 }

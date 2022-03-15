@@ -1,4 +1,8 @@
 .container {
+    &:first-of-type {
+        margin-left: 88px;
+    }
+
     width: 381px;
     height: 385px;
     position: relative;

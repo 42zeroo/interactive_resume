@@ -12,6 +12,7 @@ export default function Document() {
         />
       </Head>
       <body>
+        <h1 id="loader">Loading</h1>
         <Main />
         <NextScript />
       </body>

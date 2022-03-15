@@ -1,15 +1,27 @@
 .header {
     div {
+        padding-top: 20px;
         display: flex;
         flex-direction: column;
+
+        a {
+            margin: 5px 0;
+        }
     }
+
+
 }
 
 .content {
+    padding-top: 20px;
+
     div {
         display: flex;
-        max-width: 200px;
+        max-width: 250px;
         flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
 
         div {
             display: flex;

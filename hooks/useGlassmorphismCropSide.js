@@ -6,10 +6,14 @@ const useGlassmorphismCropSide = (side) => {
   const dispatch = useDispatch();
   useEffect(
     () =>
-      dispatch(
-        setGlassmorphismBackgroundIsCroppedVerticaly(
-          side !== "horizontal" ? true : false
-        )
+      setTimeout(
+        () =>
+          dispatch(
+            setGlassmorphismBackgroundIsCroppedVerticaly(
+              side !== "horizontal" ? true : false
+            )
+          ),
+        500
       ),
     []
   );

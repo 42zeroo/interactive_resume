@@ -8,5 +8,21 @@
     display: flex;
     justify-content: space-between;
 
+    .column {
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+
+        line-height: 147.5%;
+        letter-spacing: 0.046em;
+
+        &:first-of-type {
+
+            padding-right: 57px;
+
+        }
+    }
 
 }

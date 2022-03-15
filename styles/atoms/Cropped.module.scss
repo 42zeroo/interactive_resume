@@ -19,7 +19,7 @@
 .horizontaly {
     width: 100vw;
     height: 57vh;
-    padding: 302px 0px 112px 88px;
+    padding: 302px 0px 112px 0px;
 
     // margin-top: 42.65vh;
     &:before {
@@ -30,7 +30,6 @@
         transform: scaleY(0.4);
         top: 47.65vh;
 
-        left: 88px;
         background: #000;
         animation: appear 5s forwards;
     }

@@ -2,6 +2,7 @@ import { useRef, useEffect } from "react";
 import styles from "@styles/layout/CornerPageSwitcher.module.scss";
 import { useRouter } from "next/router";
 import { useSelector } from "react-redux";
+import classNames from "classnames";
 import next_page_buttons_data from "@data/NextPageButtons";
 const CornerPageSwitcher = () => {
   const activePageSwitcherRef = useRef();
@@ -22,7 +23,10 @@ const CornerPageSwitcher = () => {
           onClick={() => {
             router.push(data?.href);
           }}
-          className={styles.pageNumber}
+          className={classNames(
+            styles.pageNumber,
+            pageIndex === index ? styles.activePageNumber : ""
+          )}
         >
           {index + 1}
         </div>

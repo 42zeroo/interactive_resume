@@ -14,6 +14,13 @@ const generator = (length) => {
           alt: "nextjs",
           width: 40,
           height: 41
+        },
+        {
+          uuid: uuid(),
+          url: "/custom/blank.png",
+          alt: "nextjs",
+          width: 40,
+          height: 41
         }
       ],
       preview: {
@@ -42,6 +49,180 @@ const generator = (length) => {
   return temp;
 };
 
-const data = generator(7);
+// const data = generator(7);
+
+const data = [
+  {
+    uuid: uuid(),
+    siteTitle: `webrand.pl`,
+    siteUrl: "https://webrand.pl",
+    company: `reccly`,
+    frameworks: [
+      {
+        uuid: uuid(),
+        url: "/portfolio/frameworks/next.png",
+        alt: "nextjs",
+        width: 85,
+        height: 51
+      }
+    ],
+    preview: {
+      url: "/portfolio/webrand.png",
+      alt: "webrand",
+      width: 381,
+      height: 195
+    },
+    technologies: [
+      {
+        uuid: uuid(),
+        url: "/portfolio/technologies/styled.png",
+        alt: "<styled></styled>",
+        width: 65,
+        height: 75
+      }
+    ]
+  },
+  {
+    uuid: uuid(),
+    siteTitle: `dream4cars.pl`,
+    siteUrl: "https://dream4cars.pl",
+    company: `reccly`,
+    frameworks: [
+      {
+        uuid: uuid(),
+        url: "/portfolio/frameworks/next.png",
+        alt: "nextjs",
+        width: 85,
+        height: 51
+      },
+      {
+        uuid: uuid(),
+        url: "/portfolio/frameworks/drupal.png",
+        alt: "nextjs",
+        width: 46,
+        height: 53
+      }
+    ],
+    preview: {
+      url: "/portfolio/dream4cars.png",
+      alt: "drem4cars",
+      width: 381,
+      height: 195
+    },
+    technologies: [
+      {
+        uuid: uuid(),
+        url: "/portfolio/technologies/styled.png",
+        alt: "<styled></styled>",
+        width: 65,
+        height: 75
+      },
+      {
+        uuid: uuid(),
+        url: "/portfolio/technologies/redux.png",
+        alt: "<styled></styled>",
+        width: 65,
+        height: 75
+      }
+    ]
+  },
+  {
+    uuid: uuid(),
+    siteTitle: `uwolnijpiekno.pl`,
+    siteUrl: "https://uwolnijpiekno.pl",
+    company: `reccly`,
+    frameworks: [
+      {
+        uuid: uuid(),
+        url: "/portfolio/frameworks/next.png",
+        alt: "nextjs",
+        width: 85,
+        height: 51
+      }
+    ],
+    preview: {
+      url: "/portfolio/uwolnijpiekno.png",
+      alt: "drem4cars",
+      width: 381,
+      height: 195
+    },
+    technologies: [
+      {
+        uuid: uuid(),
+        url: "/portfolio/technologies/styled.png",
+        alt: "<styled></styled>",
+        width: 65,
+        height: 75
+      }
+    ]
+  },
+  {
+    uuid: uuid(),
+    siteTitle: `shareyourfire.ch`,
+    siteUrl: "https://shareyourfire.ch",
+    company: `sugo`,
+    frameworks: [
+      {
+        uuid: uuid(),
+        url: "/portfolio/frameworks/drupal.png",
+        alt: "nextjs",
+        width: 46,
+        height: 53
+      }
+    ],
+    preview: {
+      url: "/portfolio/shareyourfire.png",
+      alt: "syf",
+      width: 381,
+      height: 195
+    },
+    technologies: [
+      {
+        uuid: uuid(),
+        url: "/portfolio/technologies/htmlcss.png",
+        alt: "htmlcss",
+        width: 102,
+        height: 66
+      }
+    ]
+  },
+  {
+    uuid: uuid(),
+    siteTitle: `tipply.pl - kreator nowego konta`,
+    siteUrl: "https://tipply.pl",
+    company: `sugo`,
+    frameworks: [
+      {
+        uuid: uuid(),
+        url: "/portfolio/frameworks/react.png",
+        alt: "nextjs",
+        width: 58,
+        height: 50
+      }
+    ],
+    preview: {
+      url: "/portfolio/tipply.png",
+      alt: "syf",
+      width: 381,
+      height: 195
+    },
+    technologies: [
+      {
+        uuid: uuid(),
+        url: "/portfolio/technologies/styled.png",
+        alt: "htmlcss",
+        width: 65,
+        height: 75
+      },
+      {
+        uuid: uuid(),
+        url: "/portfolio/technologies/babylon.png",
+        alt: "htmlcss",
+        width: 65,
+        height: 66
+      }
+    ]
+  }
+];
 
 export default data;

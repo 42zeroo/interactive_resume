@@ -23,10 +23,16 @@
     cursor: pointer;
     transition: 0.4s transform ease, 0.4s color ease;
     user-select: none;
+    color: #828282;
 
     &:hover {
         transform: scale(1.15);
+        color: #000;
     }
+}
+
+.activePageNumber {
+    color: #000;
 }
 
 .activePageSwitcher {

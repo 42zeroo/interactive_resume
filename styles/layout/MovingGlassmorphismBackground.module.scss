@@ -3,10 +3,11 @@
     width: 66.66vw;
     position: relative;
     margin-top: 0;
-    transition: 0.3s all ease-in-out;
+    transition: 0.3s width ease-in-out, 1s height ease-in-out, 0.2s margin-top ease-in-out;
 
     &:before {
-        transition: 0.3s all ease-in-out;
+        transition: 0.3s width ease-in-out, 1s height ease-in-out, 0.2s margin-top ease-in-out;
+
         content: "";
         position: absolute;
         top: 0;
@@ -23,12 +24,13 @@
     height: 100vh;
     width: 100vw;
     position: relative;
-    transition: 0.3s all ease-in-out;
+    transition: 0.3s width ease-in-out, 1s height ease-in-out, 0.2s margin-top ease-in-out;
+
 
     &:before {
         margin-top: 47.65vh;
+        transition: 0.3s width ease-in-out, 1s height ease-in-out, 0.2s margin-top ease-in-out;
 
-        transition: 0.3s all ease-in-out;
         content: "";
         top: 0;
         position: absolute;
