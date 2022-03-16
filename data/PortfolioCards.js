@@ -54,8 +54,8 @@ const generator = (length) => {
 const data = [
   {
     uuid: uuid(),
-    siteTitle: `webrand.pl`,
-    siteUrl: "https://webrand.pl",
+    siteTitle: `This resume site`,
+    siteUrl: "https://interactive-resume-42zeroo.vercel.app/",
     company: `reccly`,
     frameworks: [
       {
@@ -67,8 +67,45 @@ const data = [
       }
     ],
     preview: {
-      url: "/portfolio/webrand.png",
-      alt: "webrand",
+      url: "/portfolio/portfolio.png",
+      alt: "portfolio",
+      width: 381,
+      height: 195
+    },
+    technologies: [
+      {
+        uuid: uuid(),
+        url: "/portfolio/technologies/sass.svg",
+        alt: "sass",
+        width: 77,
+        height: 58
+      },
+      {
+        uuid: uuid(),
+        url: "/portfolio/technologies/redux.png",
+        alt: "<styled></styled>",
+        width: 65,
+        height: 75
+      }
+    ]
+  },
+  {
+    uuid: uuid(),
+    siteTitle: `uwolnijpiekno.pl`,
+    siteUrl: "https://uwolnijpiekno.pl",
+    company: `reccly`,
+    frameworks: [
+      {
+        uuid: uuid(),
+        url: "/portfolio/frameworks/next.png",
+        alt: "nextjs",
+        width: 85,
+        height: 51
+      }
+    ],
+    preview: {
+      url: "/portfolio/uwolnijpiekno.png",
+      alt: "drem4cars",
       width: 381,
       height: 195
     },
@@ -128,8 +165,8 @@ const data = [
   },
   {
     uuid: uuid(),
-    siteTitle: `uwolnijpiekno.pl`,
-    siteUrl: "https://uwolnijpiekno.pl",
+    siteTitle: `webrand.pl`,
+    siteUrl: "https://webrand.pl",
     company: `reccly`,
     frameworks: [
       {
@@ -141,8 +178,8 @@ const data = [
       }
     ],
     preview: {
-      url: "/portfolio/uwolnijpiekno.png",
-      alt: "drem4cars",
+      url: "/portfolio/webrand.png",
+      alt: "webrand",
       width: 381,
       height: 195
     },
@@ -150,7 +187,7 @@ const data = [
       {
         uuid: uuid(),
         url: "/portfolio/technologies/styled.png",
-        alt: "<styled></styled>",
+        alt: "<styled></>",
         width: 65,
         height: 75
       }
